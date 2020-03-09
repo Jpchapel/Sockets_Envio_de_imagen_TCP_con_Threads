@@ -37,6 +37,12 @@ public class Cliente {
             socket.getOutputStream().flush();
         } catch (IOException ex) {
             Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
+        }finally{
+            try {
+                socket.close();
+            } catch (IOException ex) {
+                Logger.getLogger(Cliente.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
     
