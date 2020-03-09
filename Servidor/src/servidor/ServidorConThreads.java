@@ -40,7 +40,7 @@ public class ServidorConThreads extends Thread{
             System.out.println("Nueva conexion: " + socket.getInetAddress());
             
             bufferedImage = ImageIO.read(socket.getInputStream());
-            ImageIO.write(bufferedImage, "png", new FileOutputStream("D:\\Destino"));
+            ImageIO.write(bufferedImage, "png", new FileOutputStream("D:/Destino/deadpool.png"));
             
             System.out.println("Imagen Recibida");
             

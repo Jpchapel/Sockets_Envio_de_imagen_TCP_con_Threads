@@ -32,7 +32,7 @@ public class Cliente {
         
         try {
             socket = new Socket(HOST, PUERTO);
-            bufferedImage = ImageIO.read(new File("D:\\Origen"));
+            bufferedImage = ImageIO.read(new File("D:/Origen/deadpool.png"));
             ImageIO.write(bufferedImage, "png", socket.getOutputStream());
             socket.getOutputStream().flush();
         } catch (IOException ex) {
